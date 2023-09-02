@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+    <link rel="stylesheet" href="jobs.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  
+    <!-- =====Fontawesome CDN Link===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="logo"><a href="index.html"><img src="images/BHC-Logo.png" alt=""></a></li>
+            <li class="items"><a href="index.html">Home</a></li>
+            <li class="items"><a href="index.html#section1">Services</a></li>
+            <li class="items"><a href="index.html#section2">About</a></li>
+            <li class="items"><a href="index.html#section3">Our Process</a></li>
+            <li class="items"><a href="index.html#section4">Blogs</a></li>
+            <li class="items"><a href="#" class="active">Jobs</a></li>
+            <li class="items"><a href="marketing.html">Marketing</a></li>
+            <li class="items"><a href="index.html#section5"><button>Contact Us</button></a></li>
+            <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav> 
+
+
+
+    <div class="blur-container">
+
+        <div class="container positions">
+            <ul>
+              <li class="pos-card" id="pos_1">
+                <div class="content">
+                  <div class="title new">Facility Manager</div>
+                  <div class="dept">1 Slot Left</div>
+                  <div class="date">Sep</div>
+                  <a href="#" class="show-form"><div class="refer">Apply</div></a>
+                </div>
+                <ul class="desc">
+                  <li>A fast-growing hospitality institution is recruiting to fill the position of: Facility Manager. The position is located in Ikorodu, Lagos State. Salary: N90,000 Interested candidates should possess a Bachelor's Degree/HND qualification with 3-5 years work experience.</li>
+                </ul>
+              </li>
+              <li class="pos-card" id="pos_2">
+                <div class="content">
+                  <div class="title">Chef</div>
+                  <div class="dept">1 Slot Left</div>
+                  <div class="date">Aug</div>
+                  <a href="#" class="show-form"><div class="refer">Apply</div></a>
+                </div>
+                <ul class="desc"> 
+                  <li>A fast-growing hospitality institution is recruiting to fill the position of: Chef. The position is located in Ikorodu, Lagos State. Salary: N70,000 monthly Interested candidates should possess an OND / NCE / HND qualification with 3-5 years work experience.</li>
+                </ul>
+              </li>
+              <li class="pos-card" id="pos_3">
+                <div class="content">
+                  <div class="title">Cook</div>
+                  <div class="dept">1 Slot Left</div>
+                  <div class="date">Aug</div>
+                  <a href="#" class="show-form"><div class="refer">Apply</div></a>
+                </div>
+                <ul class="desc">
+                  <li>A fast-growing hospitality institution is recruiting to fill the position of: Cook. The position is located in Ikorodu, Lagos State. Salary: N40,000 monthly Interested candidates should possess an OND / NCE / HND qualification with 3-5 years work experience.</li>
+                </ul>
+              </li>
+            </ul>
+        </div>
+       
+    </div>
+
+    <div id="application-form" class="hidden">
+        <button id="close-button" class="close-button">Close</button>
+        <!-- Your form content here -->
+        <div class="col-md-6 offset-md-3 mt-5">
+          <h1>Job Application Form</h1>
+          <form action="https://getform.io/f/91525953-c3c0-482c-a3e9-94721e6e9dfd"  method="POST" enctype="multipart/form-data">
+            
+            <div class="form-group">
+                <label for="exampleInputName">Full Name</label>
+                <input type="text" name="fullname" class="form-control" id="exampleInputName" placeholder="Name and Surname" required="required">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1" required="required">Email address</label>
+                <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" name="address" class="form-control" id="inputAddress" placeholder="123 Main St">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" name="city" class="form-control" id="inputCity" placeholder="City">
+                </div>
+                <div class="form-group col-md-2">
+                <label for="inputPosition">Position</label>
+                <input type="text" name="position" class="form-control" id="inputPosition" placeholder="Role">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="example-tel-input" class="col-2 col-form-label">Telephone</label>
+                <div class="col-10">
+                <input class="form-control" name="tel" type="tel" value=" " id="example-tel-input">
+                </div>
+            </div>
+            <!-- <div class="form-group">
+                <label for="example-date-input" class="col-3 col-form-label">Start Date</label>
+                <div class="col-10">
+                <input class="form-control" name="starting_date" type="date" value="2020-02-01" id="example-date-input">
+                </div>
+            </div> -->
+            <div class="form-group mt-3">
+                <label class="mr-4">Upload your CV:</label>
+                <input type="file" name="file">
+            </div>
+            <button type="submit" class="bttn btn-primary">Submit</button>
+            </form>
+        </div>
+
+    </div>
+    <div class="modal-background"></div>
+
+
+
+
+  <script src="jobs.js"></script>
+</body>
+</html>
