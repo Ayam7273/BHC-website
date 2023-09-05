@@ -289,6 +289,31 @@ section{
     margin-top: 20px;
 }
 
+.service-btn{
+    margin: 32px 100px 32px 400px;
+    padding: 0%;
+    
+}
+
+.service-btn .btn1{
+    color: #fff;
+    font-size: 15px;
+    background-color: #F15D23;
+    padding: 18px 30px;
+    border-radius: 30px;
+    margin-right: 16px; 
+    transition: all .42s ease;
+    font-weight: 700;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.service-btn .btn1:hover{
+    background-color: #F7CCBB;
+    color: #F15D23;
+}
+
+
 
 .about{
     width: 100%;
@@ -628,6 +653,7 @@ form .btn button:hover{
 }
 
 
+
 @media (max-width: 960px) {
   .contact .info .link-boxes{
     flex-wrap: wrap;
@@ -776,6 +802,12 @@ form .btn button:hover{
     .service-container:nth-child(2) {
         order: -1;
     }
+
+    .service-btn{
+        margin: 32px 0px 32px 100px;
+        padding: 0%;
+        
+    }
     
 }
 
@@ -908,3 +940,35 @@ form .btn button:hover{
   
 
 }
+
+.whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+  }
+  .whatsapp-icon {
+    margin-top: 16px;
+  }
+
+  /* for mobile */
+  @media screen and (max-width: 767px){
+    .whatsapp-icon {
+      margin-top: 18px;
+    }
+    .whatsapp_float {
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 10px;
+      font-size: 22px;
+    }
+  }
