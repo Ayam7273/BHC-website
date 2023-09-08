@@ -87,4 +87,32 @@ navLinkEls.forEach(navLinkEl => {
   });
 });
 
+//Js for the blur Effect and the Apply button
+document.addEventListener("DOMContentLoaded", function () {
+  const applyButtons = document.querySelectorAll(".show-form");
+  const formContainer = document.getElementById("application-form");
+  const closeButton = document.getElementById("close-button");
+  const modalBackground = document.querySelector(".modal-background");
+  const blurContainer = document.querySelector(".blur-container"); // Get the blur container
+
+  applyButtons.forEach((applyButton) => {
+      applyButton.addEventListener("click", function () {
+          formContainer.classList.add("active");
+          blurContainer.classList.add("blurred"); // Add a class for the blur effect
+      });
+  });
+
+  closeButton.addEventListener("click", function () {
+      formContainer.classList.remove("active");
+      blurContainer.classList.remove("blurred"); // Remove the blur effect class
+  });
+
+  modalBackground.addEventListener("click", function () {
+      formContainer.classList.remove("active");
+      blurContainer.classList.remove("blurred"); // Remove the blur effect class
+  });
+});
+
+
+
 
