@@ -346,16 +346,26 @@ section{
 /* CSS for the form container */
 #application-form {
   display: none;
-  position: absolute;
-  width: 45%;
-  top: 7%;
+  position: fixed;
+  top: -50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
-  margin-top: 100px;
+  margin-top: 700px;
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   z-index: 9999;
+}
+
+
+@media (max-width: 560px) {
+  #application-form {
+    margin-top: 700px;
+    top: -10%;
+
+  }
+
+  
 }
 
 #application-form.active {
@@ -391,8 +401,8 @@ form{
 
 .form-group{
   margin-bottom: 1rem;
-
 }
+
 .bttn{
   background-color: #F15D23;
   color: #fff;
@@ -412,7 +422,7 @@ form{
 
 .form-control{
   display: block;
-  width: 100%;
+  width: 400px;
   height: calc(2.25rem + 2px);
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
